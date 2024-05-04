@@ -1,6 +1,17 @@
 import { hasClassProps } from "@utils/helpers";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const FooterLayoutOne = ({ className, logo, socialClass }) => {
+  const [copyrightText, setCopyrightText] = useState("");
+  useEffect(() => {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    setCopyrightText(
+      `© Copyright ${year}, All Rights Reserved by CTF Consultancy`
+    );
+  }, []);
+
   return (
     <div className={`footer${hasClassProps(className)}`}>
       <div className="container">
@@ -18,8 +29,8 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                 </p>
               </div>
 
-              <a href="#" className="footer-link">
-                mascoexample@gmail.com
+              <a href="mailto:coffee@ctmail.com" className="footer-link">
+                coffee@ctmail.com
               </a>
               <br />
               <ul
@@ -54,19 +65,20 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                 <h3 className="footer-title">Primary Pages</h3>
                 <ul className="footer-list">
                   <li>
-                    <a href="#">Demos</a>
+                    {/*<a href="#">Home</a>*/}
+                    <Link to={"/home"}>Home</Link>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <Link to={"/about"}>About Us</Link>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <Link to={"/service"}>Services</Link>
                   </li>
                   <li>
-                    <a href="#">Pages</a>
+                    <Link to={"/portfolio"}>Portfolio</Link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <Link to={"/contact"}>Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -74,39 +86,36 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
                 <h3 className="footer-title">Utility pages</h3>
                 <ul className="footer-list">
                   <li>
-                    <a href="#">Instructions</a>
+                    <Link to={"/team"}>Team</Link>
                   </li>
                   <li>
-                    <a href="#">Style guide</a>
+                    <Link to={"/career"}>Career</Link>
                   </li>
                   <li>
-                    <a href="#">Licenses</a>
+                    <Link to={"/faq"}>FAQ's</Link>
                   </li>
                   <li>
-                    <a href="#">404 Not found</a>
+                    <Link to={"/portfolio"}>Portfolio</Link>
                   </li>
                   <li>
-                    <a href="#">Password protected</a>
+                    <Link to={"/blog"}>Blogs</Link>
                   </li>
                 </ul>
               </div>
               <div className="col-auto col-md-4 col-lg-auto col-xl-auto col-xxl-auto">
-                <h3 className="footer-title">Resources</h3>
+                <h3 className="footer-title">Pricing</h3>
                 <ul className="footer-list">
                   <li>
-                    <a href="#">Support</a>
+                    <Link to={"/web-development-plan"}>Web Development Plan</Link>
                   </li>
                   <li>
-                    <a href="#">Privacy policy</a>
+                    <Link to={"/digital-marketing-plan"}>Digital Marketing Plans</Link>
                   </li>
                   <li>
-                    <a href="#">Terms & Conditions</a>
+                    <Link to={"/graphic-designing-plan"}>Graphic Designing Plans</Link>
                   </li>
                   <li>
-                    <a href="#">Strategic finance</a>
-                  </li>
-                  <li>
-                    <a href="#">Video guide</a>
+                    <Link to={"/content-writing-plan"}>Content Writting Plans</Link>
                   </li>
                 </ul>
               </div>
@@ -117,7 +126,7 @@ const FooterLayoutOne = ({ className, logo, socialClass }) => {
       <div className="copyright-block">
         <div className="container">
           <div className="copyright-inner text-center  copyright-border">
-            <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+            <p>{copyrightText}</p>
           </div>
         </div>
       </div>

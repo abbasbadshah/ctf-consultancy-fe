@@ -8,7 +8,7 @@ const BlogCardLarge = ({
   description,
 }) => {
   return (
-    <>
+    <div>
       <div className="blog-card-large">
         <div className="blog-card-large__image">
           <img src={imgSrc} alt="blog image" />
@@ -41,7 +41,7 @@ const BlogCardLarge = ({
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

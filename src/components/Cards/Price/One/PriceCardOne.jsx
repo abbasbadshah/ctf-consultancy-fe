@@ -11,12 +11,12 @@ const PriceCardOne = ({
   btnClass,
 }) => {
   return (
-    <>
+    <div>
       <div className={`pricing-card ${isActive === "active" ? "active" : ""}`}>
         <div className="pricing-card__head">
           <h3 className="pricing-card__plan">{name}</h3>
           <h3 className="pricing-card__price-block">
-            $
+          ₹
             <span
               className="pricing-card__price dynamic-value"
               data-yearly="00"
@@ -43,12 +43,12 @@ const PriceCardOne = ({
           </ul>
           <div className="pricing-card__button">
             <Button href="#" animation={false} className={btnClass}>
-              Purchase now
+              Purchase Now
             </Button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

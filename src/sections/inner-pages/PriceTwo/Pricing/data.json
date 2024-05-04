@@ -2,8 +2,8 @@
   {
     "name": "Silver Plan",
 
-    "monthlyPrice": "00",
-    "yearlyPrice": "00",
+    "monthlyPrice": "2100",
+    "yearlyPrice": "1700",
     "isActive": "",
     "btnClass": "btn-masco btn-outline rounded-pill w-100",
     "listItems": [

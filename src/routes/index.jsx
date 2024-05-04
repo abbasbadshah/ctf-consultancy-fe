@@ -36,7 +36,10 @@ import FaqOnePage from "../pages/FaqOnePage";
 import FaqTwoPage from "../pages/FaqTwoPage";
 import FaqThreePage from "../pages/FaqThreePage";
 import FaqFourPage from "../pages/FaqFourPage";
-
+import WebDevelopmentPlans from "../pages/WebDevPricing";
+import DigitalMarketingPlan from "../pages/DigitalMarketingPricing";
+import GraphicDesigningPlans from "../pages/GraphicDesigningPricing";
+import ContentWritingPlans from "../pages/ContentWritingPricing";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -120,12 +123,28 @@ export const router = createBrowserRouter([
     element: <ContactPageThree />,
   },
   {
-    path: "/pricing",
+    path: "/pricing-2",
     element: <PricingPageOne />,
   },
   {
-    path: "/pricing-2",
+    path: "/pricing",
     element: <PricingPageTwo />,
+  },
+  {
+    path: "/web-development-plan",
+    element: <WebDevelopmentPlans />,
+  },
+  {
+    path: "/digital-marketing-plan",
+    element: <DigitalMarketingPlan />,
+  },
+  {
+    path: "/graphic-designing-plan",
+    element: <GraphicDesigningPlans />,
+  },
+  {
+    path: "/content-writing-plan",
+    element: <ContentWritingPlans />,
   },
   {
     path: "/career",

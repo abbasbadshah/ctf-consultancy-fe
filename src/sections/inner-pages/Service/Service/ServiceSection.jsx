@@ -7,7 +7,7 @@ const ServiceSection = () => {
         <div className="container">
           <div className="row gutter-y-default justify-content-center">
             {data?.map((item, index) => (
-              <div key={index} className="col-xl-6 col-lg-6 col-md-10">
+              <div key={index} className="col-xl-6 col-lg-6 col-md-12">
                 <ServiceCardTwo {...item} />
               </div>
             ))}

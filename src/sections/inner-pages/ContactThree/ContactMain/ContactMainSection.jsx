@@ -21,8 +21,8 @@ const ContactMainSection = () => {
                   <div className="feature-widget-6__body">
                     <h3 className="feature-widget-6__title">Chat with us</h3>
                     <p>
-                      We're waiting to help you every Monday-Friday from 9 am to
-                      5 pm EST easily.
+                      We're waiting to help you every Monday-Friday from 10 am to
+                      7 pm IST easily.
                     </p>
                   </div>
                 </div>
@@ -41,8 +41,8 @@ const ContactMainSection = () => {
                   <div className="feature-widget-6__body">
                     <h3 className="feature-widget-6__title">Give us a call</h3>
                     <p>
-                      Give us a ring at <span>(+088-234-567-90)</span>. Every
-                      monday-friday from 9 am to 5 pm.
+                      Give us a ring at <span><a href="tel: +919131123541">+91 91311 23541</a></span>. Every
+                      monday-friday from 10 am to 7 pm.
                     </p>
                   </div>
                 </div>

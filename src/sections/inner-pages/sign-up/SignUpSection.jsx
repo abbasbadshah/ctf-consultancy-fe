@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SignUpSection = () => {
   return (
     <div className="account-section bg-light-2 section-padding-120">
@@ -45,7 +47,7 @@ const SignUpSection = () => {
                   <div id="item-list">
                     <span className="account-condition">
                       <input type="checkbox" id="checkbox" />I agree to the{" "}
-                      <span>Terms</span> and <span>Conditions of Privacy</span>
+                      <Link to={'#'}><span>Terms</span></Link> and <Link to={'#'}><span>Conditions of Privacy</span></Link>
                     </span>
                   </div>
                 </div>
@@ -58,7 +60,7 @@ const SignUpSection = () => {
                   </button>
                   <div className="button-bottom-text">
                     <span>
-                      Already have an account? <a href="#">Sign in now</a>
+                      Already have an account? <Link to={"/sign-in"}>Sign in now</Link>
                     </span>
                   </div>
                 </div>

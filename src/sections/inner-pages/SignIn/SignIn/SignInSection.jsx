@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const SignInSection = () => {
   return (
-    <>
+    <div>
       <div className="account-section bg-light-2 section-padding-120">
         <div className="container">
           <div className="row justify-content-center">
@@ -50,7 +52,7 @@ const SignInSection = () => {
                     </button>
                     <div className="button-bottom-text">
                       <span>
-                        Don’t have an account? <a href="#">Create an account</a>
+                        Don’t have an account? <Link to={"/sign-up"}>Create an account</Link>
                       </span>
                     </div>
                   </div>
@@ -60,7 +62,7 @@ const SignInSection = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

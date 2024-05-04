@@ -1,4 +1,36 @@
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import dotenv from "dotenv";
+
+dotenv();
+
 const ContactMainSection = () => {
+  const form = useRef();
+  const [resultMessage, setResultMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID,
+        "template_lhbxe8l",
+        e.target,
+        "m2QacO1xqb7PXcACJ"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          setResultMessage(
+            "Thank you for your message! We'll get in touch soon."
+          );
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div>
       <div className="contact_main-section padding-bottom-120">
@@ -47,10 +79,10 @@ const ContactMainSection = () => {
                       </div>
                       <div className="testimonial-widget-4__user-metadeta">
                         <h4 className="testimonial-widget-4__user">
-                          Brooklyn Simmons
+                          Abbas Badshah
                         </h4>
                         <span className="testimonial-widget-4__user-position">
-                          CEO &amp; Co-founder @ Company
+                          CEO &amp; Co-founder @ CTF Group
                         </span>
                       </div>
                     </div>
@@ -60,7 +92,11 @@ const ContactMainSection = () => {
             </div>
             <div className="offset-xl-1 col-lg-6 col-md-10">
               <div className="form-box-style__form-wrapper bg-light-2">
-                <form className="form-box-style">
+                <form
+                  ref={form}
+                  className="form-box-style"
+                  onSubmit={sendEmail}
+                >
                   <div className="form-box-style__form-inner">
                     <div className="form-box-style__form-input">
                       <h3 className="form-box-style-title">Your name</h3>
@@ -68,6 +104,7 @@ const ContactMainSection = () => {
                         className="form-control bg-white"
                         type="text"
                         placeholder="John Doe"
+                        name="contact-name"
                       />
                     </div>
                     <div className="form-box-style__form-input">
@@ -76,6 +113,7 @@ const ContactMainSection = () => {
                         className="form-control bg-white"
                         type="text"
                         placeholder="john@example.com"
+                        name="contact-email"
                       />
                     </div>
                     <div className="form-box-style__form-input">
@@ -84,6 +122,7 @@ const ContactMainSection = () => {
                         className="form-control bg-white"
                         type="text"
                         placeholder="Digital Marketing, Website Development "
+                        name="industry"
                       />
                     </div>
                     <div className="form-box-style__form-input">
@@ -94,18 +133,24 @@ const ContactMainSection = () => {
                         className="form-control bg-white textarea"
                         placeholder="Write us your question here..."
                         defaultValue={""}
+                        name="contact-message"
                       />
                     </div>
                   </div>
+                  <div className="form-box-style__form-input-button mt-4">
+                    <button
+                      type="submit"
+                      className="btn-masco rounded-pill w-100"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                  <div className="success-message">
+                    <div className="mt-4 text-center">
+                      <p color={"green"}>{resultMessage}</p>
+                    </div>
+                  </div>
                 </form>
-                <div className="form-box-style__form-input-button">
-                  <button
-                    type="submit"
-                    className="btn-masco rounded-pill w-100"
-                  >
-                    Submit
-                  </button>
-                </div>
               </div>
             </div>
           </div>

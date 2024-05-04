@@ -1,7 +1,7 @@
 {
-  "name": "masco-html",
+  "name": "ctfconsultancy",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,18 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.1",
+    "dotenv": "^16.4.5",
+    "emailjs-com": "^3.2.0",
     "isotope-layout": "^3.0.6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-isotope": "^1.0.7",
-    "react-modal-video": "^2.0.1",
+    "react-modal-video": "^1.2.10",
     "react-router-dom": "^6.12.1",
     "react-slick": "^0.29.0",
     "sass": "^1.63.3",
-    "slick-carousel": "^1.8.1",
-    "aos": "^2.3.4"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

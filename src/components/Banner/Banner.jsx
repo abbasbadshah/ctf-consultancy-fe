@@ -1,6 +1,6 @@
 const Banner = ({ title, url, text }) => {
   return (
-    <>
+    <div>
       <div className="inner_banner-section">
         <img
           className="inner_banner-background-image"
@@ -21,7 +21,7 @@ const Banner = ({ title, url, text }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

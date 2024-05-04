@@ -13,141 +13,28 @@
   },
   {
     "title": "Pricing",
-    "link": "/pricing"
-  },
-  {
-    "title": "Pages",
     "subMenuItem": [
       {
-        "name": "Services",
-        "childSub": [
-          {
-            "name": "Service",
-            "link": "/service"
-          },
-          {
-            "name": "Service Details",
-            "link": "/service-details"
-          }
-        ]
+        "name": "Web Development Plans",
+        "link": "/web-development-plan"
       },
       {
-        "name": "Team",
-        "link": "/team"
+        "name": "Digital Marketing Plan",
+        "link": "/digital-marketing-plan"
       },
       {
-        "name": "Pricing",
-        "childSub": [
-          {
-            "name": "Pricing 1",
-            "link": "/pricing"
-          },
-          {
-            "name": "Pricing 2",
-            "link": "/pricing-2"
-          }
-        ]
+        "name": "Graphic Designing Plan",
+        "link": "/graphic-designing-plan"
       },
       {
-        "name": "Career",
-        "childSub": [
-          {
-            "name": "Career",
-            "link": "/career"
-          },
-          {
-            "name": "Career Details",
-            "link": "/career-details"
-          }
-        ]
-      },
-      {
-        "name": "Portfolio",
-        "childSub": [
-          {
-            "name": " Portfolio  Classic",
-            "link": "/portfolio"
-          },
-
-          {
-            "name": "Portfolio  Modern",
-            "link": "/portfolio-3"
-          },
-          {
-            "name": "Portfolio  Minimal",
-            "link": "/portfolio-4"
-          },
-          {
-            "name": "Portfolio Details",
-            "link": "/portfolio-details"
-          }
-        ]
-      },
-      {
-        "name": "Blog",
-        "childSub": [
-          {
-            "name": "Blog",
-            "link": "/blog"
-          },
-          {
-            "name": "Blog Details",
-            "link": "/blog-details"
-          }
-        ]
-      },
-      {
-        "name": "Faq",
-        "childSub": [
-          {
-            "name": "FAQ 1",
-            "link": "/faq"
-          },
-          {
-            "name": "FAQ 2",
-            "link": "/faq-2"
-          },
-          {
-            "name": "FAQ 3",
-            "link": "/faq-3"
-          },
-          {
-            "name": "FAQ 4",
-            "link": "/faq-4"
-          }
-        ]
-      },
-      {
-        "name": "Utility",
-        "childSub": [
-          {
-            "name": "404",
-            "link": "/404"
-          },
-          {
-            "name": "Coming Soon",
-            "link": "/coming-soon"
-          }
-        ]
-      },
-      {
-        "name": "Account",
-        "childSub": [
-          {
-            "name": "Sign In",
-            "link": "/sign-in"
-          },
-          {
-            "name": "Sign Up",
-            "link": "/sign-up"
-          },
-          {
-            "name": "Reset Password",
-            "link": "/reset-password"
-          }
-        ]
+        "name": "Content Writing Plan",
+        "link": "/content-writing-plan"
       }
     ]
+  },
+  {
+    "title": "Portfolio",
+    "link": "/portfolio"
   },
   {
     "title": "Contact",

@@ -10,7 +10,7 @@ const BlogMainSection = () => {
           <div className="row">
             <div className="col-xl-8">
               <div className="blog_content">
-                <div className="blog-card-large-row">
+                <div className="blog-card-large-row row">
                   {data?.map((item, index) => (
                     <BlogCardLarge key={index} {...item} />
                   ))}

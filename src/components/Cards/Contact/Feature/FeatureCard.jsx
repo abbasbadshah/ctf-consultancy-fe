@@ -1,6 +1,6 @@
 const FeatureCard = ({ iconSrc, title, description }) => {
   return (
-    <>
+    <div>
       <div className="feature-card">
         <div className="feature-card__icon">
           <img src={iconSrc} alt="image alt" />
@@ -10,7 +10,7 @@ const FeatureCard = ({ iconSrc, title, description }) => {
           <p>{description}</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

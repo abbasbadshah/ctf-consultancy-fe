@@ -12,7 +12,7 @@ let settingProps = {
 };
 const BlogPage = () => {
   return (
-    <>
+    <div>
       {" "}
       <Layout>
         <Header signUpButtonClass="btn-masco btn-masco--header rounded-pill btn-fill--up" />
@@ -21,7 +21,7 @@ const BlogPage = () => {
         <CtaSection />
         <FooterLayoutOne {...settingProps.footer} />{" "}
       </Layout>
-    </>
+    </div>
   );
 };
 
